@@ -1,0 +1,244 @@
+{
+	"info": {
+		"_postman_id": "5e6e2712-69d4-4c74-b826-7ae779c95dff",
+		"name": "api_jwt_ci3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "5621626"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "sachin0",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "devaiyasachisn2@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost/CI_Demo/api_jwt_ci3/api/User/register"
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "sachin0",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost/CI_Demo/api_jwt_ci3/api/User/login"
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost/CI_Demo/api_jwt_ci3/api/User/logout"
+			},
+			"response": []
+		},
+		{
+			"name": "Token reGenToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "sachin0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/CI_Demo/api_jwt_ci3/api/Token/reGenToken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"CI_Demo",
+						"api_jwt_ci3",
+						"api",
+						"Token",
+						"reGenToken"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIzIiwidXNlcm5hbWUiOiJzYWNoaW4wIiwiQVBJX1RJTUUiOjE3MTk3NDcyMDN9.x80p91xT5cegrN2L4Y6UxjOlK120ij2ZkPm8nxkeUwo",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost/CI_Demo/api_jwt_ci3/api/product"
+			},
+			"response": []
+		},
+		{
+			"name": "Create product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIzIiwidXNlcm5hbWUiOiJzYWNoaW4wIiwiQVBJX1RJTUUiOjE3MTk3NDcyMDN9.x80p91xT5cegrN2L4Y6UxjOlK120ij2ZkPm8nxkeUwo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test prodect",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "100",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost/CI_Demo/api_jwt_ci3/api/product"
+			},
+			"response": []
+		},
+		{
+			"name": "single product fetch",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIzIiwidXNlcm5hbWUiOiJzYWNoaW4wIiwiQVBJX1RJTUUiOjE3MTk3NDcyOTJ9.t8NUSzHacUn0X1HE_50Gqihcnxxb8yH8vj0CrTbh55c",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost/CI_Demo/api_jwt_ci3/api/product/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Delet product fetch",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIzIiwidXNlcm5hbWUiOiJzYWNoaW4wIiwiQVBJX1RJTUUiOjE3MTk3NDc0Mjd9.fgoUTQ0E7zYYLeWcI-Qc8EZ25jFz33S0kTHSvY41yDk",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost/CI_Demo/api_jwt_ci3/api/product/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Update product",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOiIzIiwidXNlcm5hbWUiOiJzYWNoaW4wIiwiQVBJX1RJTUUiOjE3MTk3NDc5ODR9.mn4lS-VuILOjkkp42rqkt6fQwuSsrW6sKPcg1HKHazE",
+						"type": "text"
+					},
+					{
+						"key": "name",
+						"value": " testprod ecteee",
+						"type": "text"
+					},
+					{
+						"key": "price",
+						"value": " 20",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost/CI_Demo/api_jwt_ci3/api/product/2"
+			},
+			"response": []
+		},
+		{
+			"name": "tokenGen",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost/CI_Demo/api_jwt_ci3/api/Test_api/tokenGen"
+			},
+			"response": []
+		},
+		{
+			"name": "Verify Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMDAxLCJmdWxsbmFtZSI6IkhlbGxvIFdvcmxkIiwiZW1haWwiOiJoZWxsb3dvcmxkQGdtYWlsLmNvbSIsIkFQSV9USU1FIjoxNzE5NzU1MDk4fQ.Q1VrYFDXdUElYblic5nZjiBObM9LjhKYJXqLmukpVk4",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost/CI_Demo/api_jwt_ci3/api/Test_api/verify"
+			},
+			"response": []
+		}
+	]
+}
