@@ -31,7 +31,7 @@
 						}
 					]
 				},
-				"url": "http://localhost/CI_Demo/api_jwt_ci3/api/User/register"
+				"url": "http://localhost/CI_Demo/api_jwt_ci3/register"
 			},
 			"response": []
 		},
@@ -55,7 +55,7 @@
 						}
 					]
 				},
-				"url": "http://localhost/CI_Demo/api_jwt_ci3/api/User/login"
+				"url": "http://localhost/CI_Demo/api_jwt_ci3/login"
 			},
 			"response": []
 		},
@@ -64,7 +64,7 @@
 			"request": {
 				"method": "POST",
 				"header": [],
-				"url": "http://localhost/CI_Demo/api_jwt_ci3/api/User/logout"
+				"url": "http://localhost/CI_Demo/api_jwt_ci3/logout"
 			},
 			"response": []
 		},
@@ -84,7 +84,7 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost/CI_Demo/api_jwt_ci3/api/Token/reGenToken",
+					"raw": "http://localhost/CI_Demo/api_jwt_ci3/reGenToken",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -92,8 +92,6 @@
 					"path": [
 						"CI_Demo",
 						"api_jwt_ci3",
-						"api",
-						"Token",
 						"reGenToken"
 					],
 					"query": [
@@ -118,7 +116,7 @@
 						"type": "text"
 					}
 				],
-				"url": "http://localhost/CI_Demo/api_jwt_ci3/api/product"
+				"url": "http://localhost/CI_Demo/api_jwt_ci3/product"
 			},
 			"response": []
 		},
@@ -148,7 +146,7 @@
 						}
 					]
 				},
-				"url": "http://localhost/CI_Demo/api_jwt_ci3/api/product"
+				"url": "http://localhost/CI_Demo/api_jwt_ci3/product"
 			},
 			"response": []
 		},
@@ -163,7 +161,7 @@
 						"type": "text"
 					}
 				],
-				"url": "http://localhost/CI_Demo/api_jwt_ci3/api/product/1"
+				"url": "http://localhost/CI_Demo/api_jwt_ci3/product/1"
 			},
 			"response": []
 		},
@@ -178,7 +176,7 @@
 						"type": "text"
 					}
 				],
-				"url": "http://localhost/CI_Demo/api_jwt_ci3/api/product/1"
+				"url": "http://localhost/CI_Demo/api_jwt_ci3/product/1"
 			},
 			"response": []
 		},
@@ -212,7 +210,7 @@
 						}
 					}
 				},
-				"url": "http://localhost/CI_Demo/api_jwt_ci3/api/product/2"
+				"url": "http://localhost/CI_Demo/api_jwt_ci3/product/2"
 			},
 			"response": []
 		},
